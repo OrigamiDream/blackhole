@@ -2,6 +2,7 @@ package avis.blackhole;
 
 import avis.juikit.Juikit;
 
+import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -91,6 +92,7 @@ public class Main {
                 .centerAlign()
                 .antialiasing(true)
                 .visibility(true)
+                .closeOperation(WindowConstants.EXIT_ON_CLOSE)
                 .repaintInterval(10L)
                 .background(Color.BLACK)
                 .painter((juikit, graphics) -> {
